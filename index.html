@@ -48,49 +48,42 @@
         <div class="container">
             <h2 class="section-title">Últimas recetas</h2>
             <div class="grid">
-                
                 <div class="tarjeta">
-                    <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Risotto de Setas">
+                    <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Risotto">
                     <h3>Risotto de Setas Silvestres</h3>
                     <p>Cremoso risotto con hongos portobello, shiitake y parmesano añejo.</p>
-                    <a href="tarjeta1.html" class="btn-receta">Ver receta completa →</a>
+                    <a href="tarjeta1.html" class="btn-receta">Ver receta →</a>
                 </div>
-
                 <div class="tarjeta">
-                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1b958e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tarta de Queso">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1b958e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tarta Queso">
                     <h3>Tarta de Queso Vasca</h3>
-                    <p>Sin costra, cremosa por dentro y quemada por fuera. Adictiva.</p>
-                    <a href="tarjeta2.html" class="btn-receta">Ver receta completa →</a>
+                    <p>Sin costra, cremosa por dentro y quemada por fuera.</p>
+                    <a href="tarjeta2.html" class="btn-receta">Ver receta →</a>
                 </div>
-
                 <div class="tarjeta">
                     <img src="https://images.unsplash.com/photo-1569864358642-9d1684040d43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Macarons">
                     <h3>Macarons de Frambuesa</h3>
                     <p>Delicados y crujientes con ganache de frambuesa natural.</p>
-                    <a href="tarjeta3.html" class="btn-receta">Ver receta completa →</a>
+                    <a href="tarjeta3.html" class="btn-receta">Ver receta →</a>
                 </div>
-
                 <div class="tarjeta">
                     <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Salmón">
                     <h3>Salmón con Costra de Pistacho</h3>
                     <p>Salmón glaseado con miel y pistacho, acompañado de puré de coliflor.</p>
-                    <a href="tarjeta4.html" class="btn-receta">Ver receta completa →</a>
+                    <a href="tarjeta4.html" class="btn-receta">Ver receta →</a>
                 </div>
-
                 <div class="tarjeta">
                     <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Croissants">
                     <h3>Croissants Artesanales</h3>
                     <p>Hojaldrado perfecto, mantequilla francesa y 3 días de fermentación.</p>
-                    <a href="tarjeta5.html" class="btn-receta">Ver receta completa →</a>
+                    <a href="tarjeta5.html" class="btn-receta">Ver receta →</a>
                 </div>
-
                 <div class="tarjeta">
                     <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mousse">
                     <h3>Mousse de Chocolate con Sal de Maras</h3>
                     <p>Textura aireada, chocolate 70% y toque de sal peruana.</p>
-                    <a href="tarjeta6.html" class="btn-receta">Ver receta completa →</a>
+                    <a href="tarjeta6.html" class="btn-receta">Ver receta →</a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -129,7 +122,6 @@
     <script>
         const form = document.getElementById('formNewsletter');
         const mensaje = document.getElementById('mensajeNewsletter');
-        
         if (form) {
             form.addEventListener('submit', function(e) {
                 e.preventDefault();
@@ -137,9 +129,7 @@
                 mensaje.innerHTML = `✅ ¡Gracias! Enviaremos las recetas a ${email}`;
                 mensaje.style.color = 'green';
                 form.reset();
-                setTimeout(() => {
-                    mensaje.innerHTML = '';
-                }, 3000);
+                setTimeout(() => { mensaje.innerHTML = ''; }, 3000);
             });
         }
     </script>
